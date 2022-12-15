@@ -1,0 +1,245 @@
+* {margin: 0; padding: 0; font-size: 18px; font-family: calibri;}
+body {
+    /*background-color: #191D2B;*/
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titleBox{
+    width: 100%;
+    height: 200px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.titleBox #titulo{font-size: 80px;}
+.titleBox #subtitulo{font-size: 18px;}
+
+.outterBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outterBoxForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.innerBox{
+    /*display: flex;
+    justify-content: center;
+    /*align-items: center;
+    flex-wrap: wrap;*/
+    width: 700px;
+    height: 450px;
+    background-color: rgba(55, 55, 55, 0.95);
+    text-align: center;
+    border: gray solid 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
+}
+
+.innerBoxForm {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 700px;
+    height:450px;
+    background-color: rgba(55, 55, 55, 0.95);
+    border: gray solid 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
+}
+
+.outterBoxListen{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 68vh;
+    overflow: auto;
+}
+
+.innerBoxListen {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    height: auto;
+    background-color: rgba(55, 55, 55, 0.95);
+    border: gray solid 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px white;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.linkBox, .linkBoxCriadores{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(220, 130, 111);
+    width: 35%;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.linkBoxCriadores{
+    margin: 0 auto;
+    background-color: rgb(91, 179, 215);
+}
+
+.link, .linkCriadores {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.linkCriadores{text-align: center;}
+.link:hover {color: #B21063;}
+.linkCriadores:hover{color: #114FB4;}
+
+
+input, select {
+    border: none;
+    border: rgb(220, 130, 111) solid 2px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+input[type=file]{
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+input[type=file]::file-selector-button{
+    border: 2px solid rgb(220, 130, 111);
+    padding: .2em .4em;
+    border-radius: .2em;
+    color: black;
+    background-color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+input[type=file]::file-selector-button:hover{
+    background-color: rgb(220, 130, 111);
+    color: white;
+    border: 2px solid #B21063;
+}
+/*label[for="myfile"]{
+    border: rgb(220, 130, 111) solid 2px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}*/
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button, .button2{
+    text-align: center;
+    width: 25%;
+}
+
+.button button, .button2 button  {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(220, 130, 111);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.button button{background-color: rgb(220, 130, 111);}
+.button2 button{background-color: rgb(91, 179, 215);}
+.button button:hover{color: #B21063;}
+.button2 button:hover{color: #114FB4;}
+
+.buttonVoltar, .buttonVoltar2{
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.buttonVoltar{background-color: rgb(220, 130, 111);}
+.buttonVoltar:hover{color: #B21063;}
+.buttonVoltar2{background-color: rgb(91, 179, 215);}
+.buttonVoltar2:hover {color: #114FB4;}
+
+.button, .buttonVoltar{
+    
+}
+.search{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.inputSearch{
+    border: none;
+    border: rgb(91, 179, 215) solid 2px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.audioNav{
+    
+    
+}
+.audioBox{
+    font-weight: bold;
+    display: box;
+    border: rgb(91, 179, 215) solid 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(220, 130, 111);
+    width: 400px;
+    margin: 2% auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgba(55, 55, 55, 0.95);
+    
+}
+audio::-webkit-media-controls-panel{
+    background-color: #E15CC3;
+}
+
+.criador p{
+    font-size: 40px;
+    color: white;
+}
+
+#alertBox{
+    font-family: arial;
+    margin: 8px;
+    font-size: 64px;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+}
